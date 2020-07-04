@@ -6,6 +6,10 @@ var helmet = require('helmet')
 var compression = require('compression');
 var session = require('express-session')
 var FileStore = require('session-file-store')(session);
+const shortid = require('shortid');
+const db = require('./lib/lowdb')
+
+
 // 플래시 메시지
 var flash = require('connect-flash');
 
@@ -40,11 +44,14 @@ var indexRouter = require('./routes/index')
 
 
 //미들웨어 만들어 사용하기 
+//타이틀 리스트 
 app.get('*',function(req,res, next){
-    fs.readdir('./data', function(err, filelist){
+    req.filelist = db.get('topics').value();
+    next();
+    /* fs.readdir('./data', function(err, filelist){
         req.filelist = filelist;
         next();
-    });
+    }); */
 });
 //public 폴더를 정적폴더로 지정 
 app.use(express.static('public'));

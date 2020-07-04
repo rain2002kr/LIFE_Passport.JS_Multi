@@ -1,0 +1,37 @@
+{
+  "users": [
+    {
+      "id": "nLO2tZZB4",
+      "email": "cjslkh486@naver.com",
+      "password": "$2b$10$j3LXmILYVfs1X5XFUAaB6eotrlVu/2IeOji34ZCy2vjCNahettdvK",
+      "nickname": "rain"
+    },
+    {
+      "id": "M90maXpmD",
+      "email": "lkh",
+      "password": "$2b$10$Xr8Cjn3KkTjJRPrhaaSlRO3Y8wREvV9lVmFbaTHR3NPb0lshSDqYe",
+      "nickname": "Rolne"
+    },
+    {
+      "id": "8TtSNcb7v",
+      "email": "rain2002kr@gmail.com",
+      "password": "$2b$10$uuZxPW/UiIazWDQUWCFS1OGbFG/mGVbzmj1ZZPqFD0lIxXHGOqt3C",
+      "nickname": "lee eunseo"
+    }
+  ],
+  "topics": [
+    {
+      "id": "Ks498k1-6",
+      "title": "DOM",
+      "description": "111",
+      "user_id": "nLO2tZZB4"
+    },
+    {
+      "id": "mUOcBYKM4",
+      "title": "리액트",
+      "description": "12",
+      "user_id": "M90maXpmD"
+    }
+  ],
+  "hashs": "$2b$10$j3LXmILYVfs1X5XFUAaB6eotrlVu/2IeOji34ZCy2vjCNahettdvK"
+}

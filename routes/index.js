@@ -2,6 +2,7 @@ var express = require('express');
 var router = express.Router();
 var template = require('../lib/template.js');
 var auth = require('../lib/auth.js');
+const db = require('../lib/lowdb')
 
 //WEB PAGE Content load 
 router.get('/', function (request, response) {
