@@ -7,8 +7,6 @@ var path = require('path');
 const shortid = require('shortid');
 const db = require('../lib/lowdb')
 
-
-
 //CREATE Method is GET 
 router.get('/create', function(request, response){
     var filelist = request.filelist;
